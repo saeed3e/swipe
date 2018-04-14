@@ -1,0 +1,58 @@
+#frame{
+	width: 200px;
+	height: 200px;
+
+	position: relative;
+	left: 300px;
+	background-color: lightblue;
+
+}
+
+#carousel{
+	position: relative;
+	width: 1000px;
+	height: 200px;
+	background-color: blue;
+
+}
+
+.animate{
+	-webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+img{
+	position: relative;
+	float: left;
+	transform: translate(-200px)
+	/*left: 200px;*/
+}
+
+#controls{
+		position: relative;
+		left: 300px;
+	width: 200px;
+}
+
+#left{
+	float: left;
+	width: 33.3%;
+}
+
+#index{
+	display: inline-block;
+   	float: left;
+    width: 33.3%;
+    text-align: center;
+}
+
+#right{
+	float: right;
+	width: 33.3%;
+}

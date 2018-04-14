@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <div id="frame">
+                <div id="carousel" class="animate">
+                    <img class="img animate" src="http://lorempixel.com/200/200/cats/1/"/>
+                    <img class="img animate" src="http://lorempixel.com/200/200/cats/2/"/>
+                    <img class="img animate" src="http://lorempixel.com/200/200/cats/3/"/>
+                    <img class="img animate" src="http://lorempixel.com/200/200/cats/4/"/>
+                    <img class="img animate" src="http://lorempixel.com/200/200/cats/5/"/>
+                </div>
+            </div>
+            <div id="controls">
+                <button id="left" onclick="left(this)"></button>
+                <span id="index">2</span>
+                <button id="right" onclick="right(this)">></button>
+            </div>
+        
+    
+    <script src="./swipe.js"></script>
+    <script src="./script.js"></script>
+        <script>
+            
+var swiper = new Swipe('#carousel');
+swiper.onLeft(function() { left() });
+swiper.onRight(function() { right() });
+swiper.run();
+        
+        </script>
+</body>
+</html>
