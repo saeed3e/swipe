@@ -3,9 +3,10 @@
 	height: 200px;
 
 	position: relative;
-	left: 300px;
+	/* left: 300px; */
 	background-color: lightblue;
 	overflow: hidden;
+	margin: 0 auto;
 }
 
 #carousel{
@@ -35,7 +36,7 @@ img{
 
 #controls{
 		position: relative;
-		left: 300px;
+		/* left: 300px; */
 	width: 200px;
 }
 
