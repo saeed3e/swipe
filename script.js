@@ -1,5 +1,3 @@
-// import {Swipe} from './swipe.js';
-
 var index = 0;
 var amount = 0;//amount of images
 var currTransl = []
@@ -48,7 +46,7 @@ function right()
         
         var outerImg = document.getElementsByClassName("img")[outerIndex];
         outerImg.style.transform = 'translate('+(currTransl[outerIndex]-200*(amount))+'px)';
-        outerImg.style.opacity = '0.5';
+        outerImg.style.opacity = '0';
         currTransl[outerIndex] = currTransl[outerIndex]-200*(amount);
     }
 }
@@ -70,12 +68,7 @@ function left()
         }
         var outerImg = document.getElementsByClassName("img")[outerIndex];
         outerImg.style.transform = 'translate('+(currTransl[outerIndex]+200*(amount))+'px)';
-        outerImg.style.opacity = '0.5';
+        outerImg.style.opacity = '0';
         currTransl[outerIndex] = currTransl[outerIndex]+200*(amount);
     }
 }
-
-// var swiper = new Swipe('#carousel');
-// swiper.onLeft(function() { left() });
-// swiper.onRight(function() { right() });
-// swiper.run();
